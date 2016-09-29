@@ -33,6 +33,18 @@ public class SmurfWarrior extends Smurf implements Warrior {
 		// TODO Auto-generated method stub
 		super.setWeapon(Weapon.MACE);
 	}
+	
+	public SmurfWarrior makeSmurfWarrior(){
+		
+		SmurfWarrior ourSmWarrior = new SmurfWarrior();
+		
+		ourSmWarrior.changeHealth();
+		ourSmWarrior.changeMagic();
+		ourSmWarrior.setName(null);
+		ourSmWarrior.setWeapon(null);
+		
+		return ourSmWarrior;
+	}
 
 
 }

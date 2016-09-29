@@ -34,5 +34,16 @@ public class HumanWizard extends Human implements Wizard {
 		super.setWeapon(Weapon.WAND);
 	}
 
+	public HumanWizard makeHumanWizard(){
+		
+		HumanWizard ourHuWizard = new HumanWizard();
+		
+		ourHuWizard.changeHealth();
+		ourHuWizard.changeMagic();
+		ourHuWizard.setName(null);
+		ourHuWizard.setWeapon(null);
+		
+		return ourHuWizard;
+	}
 
 }

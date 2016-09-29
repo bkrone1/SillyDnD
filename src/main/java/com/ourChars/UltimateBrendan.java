@@ -37,6 +37,19 @@ public class UltimateBrendan extends Brendan implements Jedi, Ninja, Royal, Warr
 		// TODO Auto-generated method stub
 		super.setWeapon(Weapon.LIGHTSABER);
 	}
+	
+	public UltimateBrendan makeUltimateBrendan(){
+		
+		UltimateBrendan ourUltimateBrendan = new UltimateBrendan();
+		
+		ourUltimateBrendan.changeHealth();
+		ourUltimateBrendan.changeMagic();
+		ourUltimateBrendan.setName(null);
+		ourUltimateBrendan.setWeapon(null);
+		
+		return ourUltimateBrendan;
+
+	}
 
 
 }

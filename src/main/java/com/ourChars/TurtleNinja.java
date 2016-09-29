@@ -34,5 +34,16 @@ public class TurtleNinja extends Turtle implements Ninja {
 		super.setWeapon(Weapon.SAI);
 	}
 
+	public TurtleNinja makeTurtleNinja(){
+		
+		TurtleNinja ourTuNinja = new TurtleNinja();
+		
+		ourTuNinja.changeHealth();
+		ourTuNinja.changeMagic();
+		ourTuNinja.setName(null);
+		ourTuNinja.setWeapon(null);
+		
+		return ourTuNinja;
+	}
 
 }

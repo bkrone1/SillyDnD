@@ -33,4 +33,15 @@ public class TwilekJedi extends Twilek implements Jedi {
 		super.setWeapon(Weapon.LIGHTSABER);
 	}
 
+	public TwilekJedi makeTwilekJedi(){
+		
+		TwilekJedi ourTwJedi = new TwilekJedi();
+		
+		ourTwJedi.changeHealth();
+		ourTwJedi.changeMagic();
+		ourTwJedi.setName(null);
+		ourTwJedi.setWeapon(null);
+		
+		return ourTwJedi;
+	}
 }

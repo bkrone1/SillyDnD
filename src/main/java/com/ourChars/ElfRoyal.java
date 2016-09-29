@@ -34,6 +34,16 @@ public class ElfRoyal extends Elf implements Royal {
 		super.setWeapon(Weapon.SCROLL);
 	}
 
-	
+	public ElfRoyal makeElfRoyal(){
+		
+		ElfRoyal ourElfRoyal = new ElfRoyal();
+		
+		ourElfRoyal.changeHealth();
+		ourElfRoyal.changeMagic();
+		ourElfRoyal.setName(null);
+		ourElfRoyal.setWeapon(null);
+		
+		return ourElfRoyal;
+	}
 
 }
